@@ -1,0 +1,13 @@
+.git
+.gradle
+.idea
+.kotlin
+build
+node_modules
+frontend/dist
+frontend/.generated
+backend/build
+playwright-report
+test-results
+.DS_Store
+*.iml

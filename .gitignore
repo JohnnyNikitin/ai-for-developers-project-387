@@ -1,0 +1,24 @@
+# Default ignored files
+/shelf/
+/node_modules
+/.gradle
+/build
+backend/.gradle
+backend/build
+
+### IntelliJ IDEA ###
+.idea
+*.iml
+
+### Frontend ###
+frontend/node_modules
+frontend/dist
+frontend/.vite
+frontend/.generated
+frontend/*.tsbuildinfo
+frontend/vite.config.d.ts
+frontend/vite.config.js
+
+### Playwright ###
+playwright-report/
+test-results/

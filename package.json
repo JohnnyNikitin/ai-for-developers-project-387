@@ -1,0 +1,24 @@
+{
+  "name": "calendar-booking",
+  "private": true,
+  "workspaces": [
+    "frontend"
+  ],
+  "scripts": {
+    "backend:dev": "JAVA_HOME=${JAVA_HOME:-/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home} ./backend/gradlew -p backend bootRun",
+    "e2e": "VITE_API_BASE_URL=http://127.0.0.1:8080 playwright test",
+    "e2e:ui": "VITE_API_BASE_URL=http://127.0.0.1:8080 playwright test --ui",
+    "e2e:report": "playwright show-report",
+    "frontend:dev": "npm --workspace calendar-booking-frontend run dev",
+    "frontend:build": "npm --workspace calendar-booking-frontend run build",
+    "frontend:mock": "npm --workspace calendar-booking-frontend run mock",
+    "frontend:dev:all": "npm --workspace calendar-booking-frontend run dev:all",
+    "generate:openapi": "npm --workspace calendar-booking-frontend run generate:openapi"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.62.0",
+    "@typespec/compiler": "^0.62.0",
+    "@typespec/http": "^0.62.0",
+    "@typespec/openapi3": "^0.62.0"
+  }
+}
